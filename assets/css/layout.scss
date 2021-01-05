@@ -5,13 +5,15 @@
     position: fixed; top: 0; right: 0; z-index: 10000; width: 100%;
     .logo{
     padding: 50px;
-    a{display: block;
+    a{display: block; width: 100px;
     img{width: 100px;height: 100px;}
     }
     }
-    .btn_box{width: 80px;height: 80px; text-align: center; font-size: 18px; line-height: 80px; letter-spacing: 5px;
-    border: 1px solid #ffffff;}
+    .btn_box{width: 80px;height: 80px; text-align: center; font-size: 18px; line-height: 80px; letter-spacing: 5px;border: 1px solid #ffffff; position: absolute; top: 50px;right: 50px;
+    &:focus,&:hover{background: #ffffff; color: #000000;@include transition(all 0.3s);}
+    }
     .dep1{
+        display: none;
         background: #000000; width: 750px;height: 100vh; font-family: PaintChocolate; font-size: 70px;
         position: absolute; top: 0;right: 0; 
         li{height: 280px; width: 100%; line-height: 300px;
@@ -33,14 +35,12 @@
         .nav2{
         a:hover, a:focus{
             z-index: 1; color: #ffffff;
-            background-size: cover;
             background: url("../images/common/nav_hover_2.png") 60px 0px no-repeat;
         }
     }
         .nav3{
         a:hover, a:focus{
             z-index: 1; color: #ffffff;
-            background-size: cover;
             background: url("../images/common/nav_hover_3.png") 60px 0px no-repeat;
         }
     }

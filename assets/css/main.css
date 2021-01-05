@@ -1,4 +1,5 @@
 #intro {
+  display: none;
   width: 100vw;
   height: 100vh;
   font-family: FiraCode;
@@ -27,6 +28,53 @@
   to {
     border-bottom: 5px solid #fff; } }
 .section {
-  display: none; }
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  .section .main_bg {
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/main/main_bg.png"); }
+  .section .bgm {
+    text-align: center;
+    padding-top: 75px;
+    width: 100%;
+    font-size: 20px; }
+    .section .bgm p {
+      display: inline-block; }
+    .section .bgm button {
+      display: inline-block;
+      cursor: pointer; }
+    .section .bgm .bgm_play {
+      background: green; }
+    .section .bgm .bgm_pause {
+      background: red; }
+  .section .left_menu {
+    position: absolute;
+    top: 520px;
+    left: -210px;
+    transform: rotate(90deg); }
+    .section .left_menu li {
+      display: inline-block; }
+      .section .left_menu li + li {
+        margin-left: 65px; }
+  .section .right {
+    writing-mode: vertical-rl;
+    text-orientation: upright; }
+    .section .right p {
+      display: inline-block;
+      position: absolute;
+      letter-spacing: 20px;
+      -webkit-text-stroke: 1px #999A9C;
+      text-stroke: 1px #999A9C; }
+      .section .right p:nth-child(1) {
+        top: 170px;
+        right: 100px; }
+      .section .right p:nth-child(2) {
+        top: 565px;
+        right: 50px; }
 
 /*# sourceMappingURL=main.css.map */

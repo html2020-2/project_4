@@ -1,0 +1,29 @@
+.contect_1 {
+  width: 100vw;
+  height: 100vh;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center;
+  background-image: url("../images/contect/contect_bg.png"); }
+  .contect_1 span {
+    display: inline-block;
+    background: #ffffff;
+    width: 500px;
+    height: 3px;
+    position: relative;
+    top: 48%;
+    left: 55%; }
+  .contect_1 h1 {
+    position: relative;
+    top: calc(48% - 15px);
+    left: 83%;
+    font-size: 30px; }
+
+.c1_txt {
+  margin-left: 150px;
+  margin-top: 450px;
+  font-size: 20px;
+  line-height: 3.2; }
+
+/*# sourceMappingURL=sub.css.map */

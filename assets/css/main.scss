@@ -3,6 +3,7 @@
 
 // intro
 #intro{
+    display: none;
     width: 100vw; height: 100vh; 
     font-family: FiraCode; font-size: 50px;
     #typing{
@@ -25,4 +26,33 @@
     }
 }
 
-.section{display: none;}
+.section{
+    width: 100vw;height: 100vh; overflow: hidden;
+
+    .main_bg{
+        @include bgsize(cover); width: 100%; height: 100%;
+        background-image: url("../images/main/main_bg.png"); 
+    }
+
+    .bgm{text-align: center; padding-top: 75px; width: 100%; font-size: 20px;
+    p{display: inline-block;}
+    button{display: inline-block; cursor: pointer;}   
+    .bgm_play{background: green;}
+    .bgm_pause{background: red;}
+    }
+
+    .left_menu{
+    position: absolute; top: 520px;left: -210px; transform: rotate(90deg);
+    li{display: inline-block;
+    +li{margin-left: 65px;}}
+    }
+
+    .right{
+        writing-mode: vertical-rl; text-orientation: upright;
+        p{display: inline-block;position: absolute;
+        letter-spacing: 20px; @include text-stroke(1px $gray);
+        &:nth-child(1){top: 170px; right: 100px;}
+        &:nth-child(2){top: 565px; right: 50px;}
+        }
+    }
+}

@@ -72,3 +72,5 @@ header, nav, section, aside, footer{display: block;}
 body{font-family: Retroica, NtSansKR; font-size: 25px; color:#ffffff; line-height: 1; font-weight: 400;background: #000000;
 *{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 }
+
+.outline{color: transparent; @include text-stroke(1px white);}

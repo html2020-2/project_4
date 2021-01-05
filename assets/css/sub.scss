@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import "_var", "_mixin";
+
+.contect_1{
+    width: 100vw;height: 100vh;
+    @include bgsize(cover); background-position: center;
+    background-image: url("../images/contect/contect_bg.png");
+    
+    span{display: inline-block; background: #ffffff; width: 500px;height: 3px; position: relative; top: 48%; left: 55%;}
+    h1{position: relative; top: calc(48% - 15px); left: 83%; font-size: 30px;}
+}
+.c1_txt{
+    margin-left: 150px; margin-top: 450px; font-size: 20px;
+    line-height: 3.2;
+}

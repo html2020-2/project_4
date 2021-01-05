@@ -20,3 +20,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
+@mixin text-stroke($value...){
+  -webkit-text-stroke: $value;
+  text-stroke: $value;
+}
