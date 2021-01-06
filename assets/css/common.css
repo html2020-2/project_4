@@ -112,7 +112,7 @@ body {
 
 .outline {
   color: transparent;
-  -webkit-text-stroke: 1px white;
-  text-stroke: 1px white; }
+  -webkit-text-stroke: 1px #999A9C;
+  text-stroke: 1px #999A9C; }
 
 /*# sourceMappingURL=common.css.map */

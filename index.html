@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/codepen.css">
+    <link rel="stylesheet" href="assets/css/star.css">
 
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/common.js"></script>
@@ -28,7 +28,7 @@
         <header class="header clearfix" id="header">
             <nav id="gnb">
                 <h1 class="logo">
-                    <a href="">
+                    <a href="index.html">
                         <img src="../3publ/assets/images/common/logo_white.svg" alt="PARKJIYUN 글자가 적혀있는 원 안에 싸인">
                     </a>
                 </h1>
@@ -38,10 +38,10 @@
                         <a href="contect.html" data-link="first">CONTECT ME</a>
                     </li>
                     <li class="nav2">
-                        <a href="">PROJECT</a>
+                        <a href="project.html">PROJECT</a>
                     </li>
                     <li class="nav3">
-                        <a href="" data-link="last">ACCESSIBILITY</a>
+                        <a href="accessibility.html" data-link="last">ACCESSIBILITY</a>
                     </li>
                 </ul>
                
@@ -52,50 +52,61 @@
 
             <!-- index first -->
             <section id="intro" class="intro">
-                <div id="typing"><p><span>var</span> = space;</p></div>
+                <div id="typing"><p>var = space;</p></div>
             </section>
 
             <!-- section.section3#cnt3 -->
             <!-- index main -->
             <section class="section" id="cnt1">
             <div class="main_bg">
-                <div class="main_codepen">
-                </div>
+                <!-- 별이 하단에서 상단으로 올라가는 애니메이션 -->
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
                 <div class="bgm">
                     <p class="first_step">Hans Zimmer  - First Step / Interstellar (Original Motion Picture Soundtrack) [Expanded Edition]</p>
                     <button class="bgm_play" type="button">play</button>
                     <button class="bgm_pause" type="button">pause</button>
                 </div>
-
                 
                 <ul class="left_menu">
                     <li>
-                        <a href="">CONTECT ME</a>
+                        <a href="contect.html">CONTECT ME</a>
                     </li>
                     <li>
-                        <a href="">PROJECT</a>
+                        <a href="project.html">PROJECT</a>
                     </li>
                     <li>
-                        <a href="">ACCESSIBILITY</a>
+                        <a href="accessibility.html">ACCESSIBILITY</a>
                     </li>
                 </ul>
                 <!-- 좌측 하단 아이콘 -->
-                <img src="" alt="">
+                <img class="rotate" src="assets/images/main/rotate.svg" alt="">
 
                 <!-- 중앙 회전 글씨 -->
                 <div class="center">
-                <strong>HELLO</strong>
-                <ul class="center_menu">
-                    <li>
-                        <a href="">CONTECT ME</a>
-                    </li>
-                    <li>
-                        <a href="">PROJECT</a>
-                    </li>
-                    <li>
-                        <a href="">ACCESSIBILITY</a>
-                    </li>
-                </ul>
+                    <strong class="outline">HELLO,</strong>
+                    <img src="assets/images/main/circle.png" alt="">
+                    <ul class="center_menu">
+                        <li class="whale">
+                            <img src="assets/images/main/whale_icon.png" alt="흑백 색상의 흰수염고래">
+                            <div class="on">
+                                <a href="contect.html">CONTECT ME</a>
+                            </div>
+                        </li>
+                        <li class="earth">
+                            <img src="assets/images/main/earth_icon.png" alt="원형의 지구">
+                            <div class="on">
+                                <a href="project.html">PROJECT</a>
+                            </div>
+                        </li>
+                        <li class="moon">
+                            <img src="assets/images/main/moon_icon.png" alt="원형의 달">
+                            <div class="on">
+                                <a href="accessibility.html">ACCESSIBILITY</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- right 글씨 -->
