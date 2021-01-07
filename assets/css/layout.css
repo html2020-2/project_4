@@ -12,75 +12,111 @@
       #header .logo a img {
         width: 100px;
         height: 100px; }
-  #header .btn_box {
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 80px;
-    letter-spacing: 5px;
-    border: 1px solid #ffffff;
-    position: absolute;
-    top: 50px;
-    right: 50px; }
-    #header .btn_box:focus, #header .btn_box:hover {
-      background: #ffffff;
-      color: #000000;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s; }
-  #header .dep1 {
-    display: none;
-    background: #000000;
-    width: 750px;
-    height: 100vh;
-    font-family: PaintChocolate;
-    font-size: 70px;
+  #header #nav_box {
     position: absolute;
     top: 0;
-    right: 0; }
-    #header .dep1 li {
-      height: 280px;
-      width: 100%;
-      line-height: 300px; }
-      #header .dep1 li::after {
-        content: "";
-        background: #F4EBDC;
-        width: 10px;
-        height: 100px;
+    right: 50px;
+    width: 100vw;
+    height: 100vh; }
+    #header #nav_box .btn_box {
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 80px;
+      letter-spacing: 5px;
+      border: 1px solid #ffffff;
+      position: absolute;
+      top: 50px;
+      right: 50px; }
+      #header #nav_box .btn_box:focus, #header #nav_box .btn_box:hover {
+        background: #ffffff;
+        color: #000000;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+    #header #nav_box .dep1 {
+      display: none; }
+  #header #nav_box.on {
+    background: url("../images/common/nav_hover_bg.png") no-repeat;
+    background-size: cover; }
+    #header #nav_box.on .btn_box {
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 80px;
+      letter-spacing: 5px;
+      border: 1px solid #000000;
+      position: absolute;
+      top: 50px;
+      right: 750px;
+      background: #ffffff;
+      color: #000000; }
+    #header #nav_box.on #gnb {
+      background: #000000 !important;
+      width: 750px;
+      height: 100vh;
+      font-family: PaintChocolate;
+      font-size: 70px;
+      position: absolute;
+      top: 0;
+      right: -50px; }
+      #header #nav_box.on #gnb .dep1 {
+        display: block; }
+      #header #nav_box.on #gnb li {
+        height: 280px;
+        width: 100%;
+        line-height: 300px; }
+      #header #nav_box.on #gnb a {
         display: block;
-        top: 150px;
-        left: 60px;
-        position: absolute; }
-      #header .dep1 li:nth-child(2)::after {
+        width: 100%;
+        height: 100%;
+        padding-left: 130px;
+        color: #999A9C; }
+        #header #nav_box.on #gnb a::after {
+          content: "";
+          background: #F4EBDC;
+          width: 10px;
+          height: 100px;
+          display: block;
+          left: 60px;
+          position: absolute; }
+      #header #nav_box.on #gnb a:hover::after, #header #nav_box.on #gnb a:focus::after {
+        display: none; }
+      #header #nav_box.on #gnb .nav1 {
+        height: 350px;
+        line-height: 400px; }
+        #header #nav_box.on #gnb .nav1 a::after {
+          top: 150px; }
+        #header #nav_box.on #gnb .nav1 a:hover, #header #nav_box.on #gnb .nav1 a:focus {
+          z-index: 1;
+          color: #ffffff;
+          -webkit-transition: all 1s;
+          -moz-transition: all 1s;
+          -o-transition: all 1s;
+          transition: all 1s;
+          background: url("../images/common/nav_hover_1.png") 60px 20px no-repeat; }
+      #header #nav_box.on #gnb .nav2 a::after {
         top: 450px; }
-      #header .dep1 li:nth-child(3)::after {
-        top: 750px; }
-    #header .dep1 a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      padding-left: 130px;
-      color: #999A9C; }
-    #header .dep1 .nav1 {
-      height: 350px;
-      line-height: 400px; }
-      #header .dep1 .nav1 a:hover, #header .dep1 .nav1 a:focus {
+      #header #nav_box.on #gnb .nav2 a:hover, #header #nav_box.on #gnb .nav2 a:focus {
         z-index: 1;
         color: #ffffff;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        background: url("../images/common/nav_hover_1.png") 60px 20px no-repeat; }
-    #header .dep1 .nav2 a:hover, #header .dep1 .nav2 a:focus {
-      z-index: 1;
-      color: #ffffff;
-      background: url("../images/common/nav_hover_2.png") 60px 0px no-repeat; }
-    #header .dep1 .nav3 a:hover, #header .dep1 .nav3 a:focus {
-      z-index: 1;
-      color: #ffffff;
-      background: url("../images/common/nav_hover_3.png") 60px 0px no-repeat; }
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        background: url("../images/common/nav_hover_2.png") 60px 0px no-repeat; }
+      #header #nav_box.on #gnb .nav3 a::after {
+        top: 750px; }
+      #header #nav_box.on #gnb .nav3 a:hover, #header #nav_box.on #gnb .nav3 a:focus {
+        z-index: 1;
+        color: #ffffff;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        background: url("../images/common/nav_hover_3.png") 60px 0px no-repeat; }
 
 /*# sourceMappingURL=layout.css.map */

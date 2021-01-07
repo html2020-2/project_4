@@ -73,4 +73,4 @@ body{font-family: Retroica, NtSansKR; font-size: 25px; color:#ffffff; line-heigh
 *{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 }
 
-.outline{color: transparent; @include text-stroke(1px $gray);}
+.outline{color: transparent; @include text-stroke(0.1px $gray);}

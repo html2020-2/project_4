@@ -49,6 +49,7 @@
 #cnt2 {
   width: 100vw;
   height: 100vh;
+  cursor: default;
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   background-size: cover !important;
@@ -84,6 +85,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
+  cursor: default;
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   background-size: cover !important;
@@ -92,7 +94,7 @@
   #cnt3 h2 {
     padding-top: 150px;
     margin-left: 300px;
-    font-size: 100px; }
+    font-size: 120px; }
   #cnt3 .skill_box {
     margin-left: 150px;
     margin-top: 100px; }
